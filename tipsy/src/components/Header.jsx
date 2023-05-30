@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/Header.css';
-import searchImg from '../assets/search.png';
 
 function header() {
     return (
@@ -87,21 +86,19 @@ function header() {
                         </li>
                     </ul>
                     <div className="mainSearch">
-                        <a href="/">
-                            <form action="./searchpage/searchpage.html">
-                                <input
-                                    type="search"
-                                    name="mainSearch"
-                                    placeholder="검색"
+                        <form action="./searchpage/searchpage.html">
+                            <input
+                                type="search"
+                                name="mainSearch"
+                                placeholder="검색"
+                            />
+                            <button type="submit">
+                                <img
+                                    src={require('../assets/search.png')}
+                                    alt="검색"
                                 />
-                                <button type="submit">
-                                    <img
-                                        src={require('../assets/search.png')}
-                                        alt="검색"
-                                    />
-                                </button>
-                            </form>
-                        </a>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>

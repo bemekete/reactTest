@@ -7,10 +7,10 @@ function Footer() {
             <div id="footer">
                 <div className="footer_cover">
                     <div>
-                        <a href="/" className="foot_logo">
+                        <a href="./index.html" className="foot_logo">
                             <img
                                 src={require('../assets/crop_logo_black2.png')}
-                                alt="로고 이미지"
+                                alt="이미지. 로고"
                             />
                         </a>
 

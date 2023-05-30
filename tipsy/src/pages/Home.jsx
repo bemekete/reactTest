@@ -4,7 +4,6 @@ import '../styles/Home.css';
 function Home() {
     return (
         <>
-            {/* <!-- ============================== main ======================================== --> */}
             <main>
                 <div className="main_container">
                     <ul className="slide_list">
@@ -35,7 +34,7 @@ function Home() {
                     </ul>
 
                     <div className="pageOfPages">
-                        {/* <a href="./eventboard/eventboard.html"></a> */}
+                        <a href="./eventboard/eventboard.html">/</a>
                     </div>
                     <div className="pager"></div>
                 </div>
@@ -167,56 +166,53 @@ function Home() {
                 </div>
                 {/* <!-- ////////////////////////////////// board,notice ///////////////////////////////////// --> */}
                 <div className="intro_board_wrap">
-                    <div className="board_wrap">
+                    <div className="board_wrap board_wrap_review">
+                        <ul className="scrollDot">
+                            <li data-review-page="0"></li>
+                            <li
+                                data-review-page="1"
+                                className="scrollDotOpacity"
+                            ></li>
+                        </ul>
                         <div className="board_notice_top">
                             <div className="intro_board_tit">
                                 <div>상품후기보기</div>
                             </div>
-                            <div>
-                                <a href="./reviewboard/reviewboard.html">
-                                    More+
-                                </a>
-                            </div>
                         </div>
                         <div className="intro_board">
-                            <div>
+                            <div className="reviewBoard review1">
+                                <div></div>
                                 <div>
-                                    <p>
-                                        <b>tipsy 특별회원 가입하기</b>
-                                    </p>
+                                    <div className="review_goods_name">
+                                        세인트하우스 복숭아 스파클링 와인
+                                    </div>
+                                    <p className="star">★★★★★</p>
+                                    입문 하는 용으로 추천합니다.
+                                    <br />
+                                    단맛을 싫어 하시는 분은 비추이고 달달한 와인
+                                    찾으시면
+                                    <br />
+                                    좋을꺼 같네요.
                                 </div>
-                                <div>
-                                    <p className="intro_board_txt">
-                                        그 어떤 특별회원 혜택보다도 가성비 높은
-                                        사은품 입니다.
-                                        <br />
-                                        감사합니다.
-                                    </p>
-                                </div>
-                                <div className="star"></div>
                             </div>
-                            <div>
+                            <div className="reviewBoard review2">
+                                <div></div>
                                 <div>
-                                    <p>
-                                        <b>tipsy 국순당여주 려 25도 375ml</b>
-                                    </p>
+                                    <div className="review_goods_name">
+                                        한스오차드
+                                    </div>
+                                    <p className="star">★★★★☆</p>
+                                    누구나 쉽게 즐길 수 있는 와인
+                                    <br />
+                                    우리나라 최초의 사과 와인
+                                    <br />
+                                    일반 와인과 별개의 와인으로 봐야 할 듯
+                                    합니다.
                                 </div>
-                                <div>
-                                    <p className="intro_board_txt">
-                                        일본 고구마소주와는 조금 다릅니다.
-                                        캐치하려했던 향이
-                                        <br />
-                                        단맛이나 곡향보다는 좀 더 드라이하고
-                                        풋향이 강해서
-                                        <br />
-                                        별개의 고구마소주로 봐야할 듯 합니다
-                                    </p>
-                                </div>
-                                <div className="star"></div>
                             </div>
                         </div>
                     </div>
-                    <div className="board_wrap">
+                    <div className="board_wrap ">
                         <div className="board_notice_top">
                             <div className="intro_board_tit">
                                 <div>공지사항</div>
@@ -227,10 +223,6 @@ function Home() {
                         </div>
                         <div className="intro_board_notice">
                             <ul>
-                                <li>
-                                    <a href="/">공지사항 입니다 6</a>
-                                    <span className="date">2022.12.10</span>
-                                </li>
                                 <li>
                                     <a href="/">공지사항 입니다 5</a>
                                     <span className="date">2022.12.09</span>
