@@ -49,10 +49,7 @@ function Home() {
                                     <span>10.8% |&nbsp; </span>
                                     <strong> 36,000</strong>원
                                 </p>
-                                <a
-                                    href="./detail/detail_monkey.html"
-                                    className="winePageButton"
-                                >
+                                <a href="/detail" className="winePageButton">
                                     자세히 알아보기
                                 </a>
                             </div>
@@ -62,10 +59,7 @@ function Home() {
                                     <span>13% |&nbsp; </span>
                                     <strong> 2,980</strong>원
                                 </p>
-                                <a
-                                    href="./detail/detail_donghak.html"
-                                    className="winePageButton"
-                                >
+                                <a href="/detail" className="winePageButton">
                                     자세히 알아보기
                                 </a>
                             </div>
@@ -75,10 +69,7 @@ function Home() {
                                     <span>8% |&nbsp; </span>
                                     <strong> 50,000</strong>원
                                 </p>
-                                <a
-                                    href="./detail/detail_yeon.html"
-                                    className="winePageButton"
-                                >
+                                <a href="/detail" className="winePageButton">
                                     자세히 알아보기
                                 </a>
                             </div>
@@ -91,10 +82,7 @@ function Home() {
                                     <span>11% |&nbsp; </span>
                                     <strong> 20,160</strong>원
                                 </p>
-                                <a
-                                    href="./detail/detail_hans.html"
-                                    className="winePageButton"
-                                >
+                                <a href="/detail" className="winePageButton">
                                     자세히 알아보기
                                 </a>
                             </div>
@@ -104,10 +92,7 @@ function Home() {
                                     <span>40% |&nbsp; </span>
                                     <strong> 21,000</strong>원
                                 </p>
-                                <a
-                                    href="./detail/detail_hansiwool.html"
-                                    className="winePageButton"
-                                >
+                                <a href="/detail" className="winePageButton">
                                     자세히 알아보기
                                 </a>
                             </div>
@@ -117,10 +102,7 @@ function Home() {
                                     <span>40% |&nbsp; </span>
                                     <strong> 17,910</strong>원
                                 </p>
-                                <a
-                                    href="./detail/detail_mildam.html"
-                                    className="winePageButton"
-                                >
+                                <a href="/detail" className="winePageButton">
                                     자세히 알아보기
                                 </a>
                             </div>
