@@ -9,25 +9,25 @@ function Home() {
                     <ul className="slide_list">
                         <li>
                             <img
-                                src={require('../assets/slide4.png')}
+                                src={require('../assets/home_img/slide4.png')}
                                 alt="bg4"
                             />
                         </li>
                         <li>
                             <img
-                                src={require('../assets/slide1.png')}
+                                src={require('../assets/home_img/slide1.png')}
                                 alt="bg1"
                             />
                         </li>
                         <li>
                             <img
-                                src={require('../assets/slide2.png')}
+                                src={require('../assets/home_img/slide2.png')}
                                 alt="bg2"
                             />
                         </li>
                         <li>
                             <img
-                                src={require('../assets/slide3.png')}
+                                src={require('../assets/home_img/slide3.png')}
                                 alt="bg3"
                             />
                         </li>

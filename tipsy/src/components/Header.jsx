@@ -35,7 +35,7 @@ function header() {
                 <div className="headerMenu">
                     <ul className="mainCategoryList">
                         <li className="bannerCategory">
-                            <a href="./mainPage/mainPage_all.html">카테고리</a>
+                            <a href="/mainpage">카테고리</a>
                             <div className="detailCategoryList">
                                 <ul>
                                     <li className="hoverCategory">
@@ -94,7 +94,7 @@ function header() {
                             />
                             <button type="submit">
                                 <img
-                                    src={require('../assets/search.png')}
+                                    src={require('../assets/home_img/search.png')}
                                     alt="검색"
                                 />
                             </button>

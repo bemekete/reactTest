@@ -9,7 +9,7 @@ function Footer() {
                     <div>
                         <a href="./index.html" className="foot_logo">
                             <img
-                                src={require('../assets/crop_logo_black2.png')}
+                                src={require('../assets/home_img/crop_logo_black2.png')}
                                 alt="이미지. 로고"
                             />
                         </a>
