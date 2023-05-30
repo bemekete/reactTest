@@ -12,7 +12,7 @@ function header() {
                     <div className="serviceTab">
                         <ul className="serviceTabList">
                             <li>
-                                <a href="./login/login.html">로그인</a>
+                                <a href="/login">로그인</a>
                             </li>
                             <li>
                                 <a href="./join/join.html">회원가입</a>
