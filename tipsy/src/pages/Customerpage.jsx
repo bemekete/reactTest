@@ -69,7 +69,7 @@ export default function Customerpage() {
                             </a>
                         </li>
                         <li className="menu6">
-                            <a href="../simple_inquiry/simple_inquiry.html">
+                            <a href="/simpleinquiry">
                                 <span className="menuicon2 Simpleinquiry"></span>
                                 <span>간편문의</span>
                             </a>
