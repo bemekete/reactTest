@@ -1,5 +1,4 @@
 import Shipment from './contents/Shipment';
-import Point from './contents/Point';
 import Coupon from './contents/Coupon';
 import Postbox from './contents/Postbox';
 import Likecon from './contents/Likecon';
@@ -12,16 +11,14 @@ export default function listContents({ categoryNum }) {
             case 0:
                 return <Shipment />;
             case 1:
-                return <Point />;
-            case 2:
                 return <Coupon />;
-            case 3:
+            case 2:
                 return <Postbox />;
-            case 4:
+            case 3:
                 return <Likecon />;
-            case 5:
+            case 4:
                 return <Currentcon />;
-            case 6:
+            case 5:
                 return <Alcstyle />;
             default:
                 return <Shipment />;
@@ -29,7 +26,7 @@ export default function listContents({ categoryNum }) {
     }
 
     return (
-        <div class="listContents">
+        <div className="listContents">
             {ViewCon()}
         </div>
     )
