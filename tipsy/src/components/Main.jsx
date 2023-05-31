@@ -11,6 +11,7 @@ import JoinForm from '../pages/JoinForm';
 import Customerpage from '../pages/Customerpage';
 import Notice from '../pages/Notice';
 import FAQ from '../pages/FAQ';
+import CreateOrder from '../pages/CreateOrder';
 
 function Main() {
     return (
@@ -25,9 +26,13 @@ function Main() {
                         <Route path="/join" element={<Join />} />
                         <Route path="/joinform" element={<JoinForm />} />
                         <Route path="/mypage" element={<Mypage />} />
-                        <Route path="/customerpage" element={<Customerpage />} />
+                        <Route
+                            path="/customerpage"
+                            element={<Customerpage />}
+                        />
                         <Route path="/notice" element={<Notice />} />
                         <Route path="/faq" element={<FAQ />} />
+                        <Route path="/createorder" element={<CreateOrder />} />
                     </Routes>
                 </BrowserRouter>
             </div>

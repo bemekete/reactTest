@@ -6,9 +6,9 @@ function FAQ() {
         <>
             <div id="FAQ_main">
                 <div id="faq_maincontainer">
-                    <p class="FAQ_first_text">FAQ</p>
+                    <p className="FAQ_first_text">FAQ</p>
 
-                    <div class="FAQ_text">
+                    <div className="FAQ_text">
                         <p>
                             저희 도르리 사이트를 이용하시는 회원님들의 질문 중
                             자주하시는 질문들을 모아 놓았습니다.
@@ -20,10 +20,10 @@ function FAQ() {
 
                     <div>
                         {/* <!-- 고객문의 바로가기 --> */}
-                        <div class="customer_inquiry">
+                        <div className="customer_inquiry">
                             <ul>
                                 {/* <!-- 여기 button 말고 a 태그 쓰면 안되나? --> */}
-                                <li class="customer_inquiry_button">
+                                <li className="customer_inquiry_button">
                                     <a href="../simple_inquiry/simple_inquiry.html">
                                         고객문의 바로가기
                                     </a>
@@ -34,11 +34,11 @@ function FAQ() {
 
                     <div>
                         {/* <!-- 나머지 --> */}
-                        <div class="Qbox_container">
+                        <div className="Qbox_container">
                             {/* <!-- Q. 친환경소재를 사용하고 있나요. --> */}
                             <ul>
                                 {/* <!-- Q는 가상요소 선택자로--> */}
-                                <li class="Qbox1">
+                                <li className="Qbox1">
                                     아이디와 비밀번호가 기억나지 않아요.
                                     {/* <!-- 여기에 hover 하면 바뀌는 화살표. html,css 영역 아닌듯. --> */}
                                     <ul>
@@ -52,7 +52,7 @@ function FAQ() {
                                     </ul>
                                 </li>
 
-                                <li class="Qbox2">
+                                <li className="Qbox2">
                                     상품을 받았는데 환불하고 싶어요.
                                     <ul>
                                         <li>
@@ -64,7 +64,7 @@ function FAQ() {
                                     </ul>
                                 </li>
 
-                                <li class="Qbox3">
+                                <li className="Qbox3">
                                     품절 된 술들은 언제쯤 재입고 되나요?
                                     <ul>
                                         <li>
@@ -80,7 +80,7 @@ function FAQ() {
                             </ul>
                         </div>
 
-                        <div class="FAQ_search">
+                        <div className="FAQ_search">
                             {/* <!-- 검색창 --> */}
                             <form action="#">
                                 <label>
@@ -100,21 +100,21 @@ function FAQ() {
                             </form>
                         </div>
 
-                        <div class="inquiry">
-                            <div class="inquiry_box box_background">
+                        <div className="inquiry">
+                            <div className="inquiry_box box_background">
                                 {/* <!-- 전체 문의, 홈페이지 문의, 제품 문의, A/S문의, 이전 설치 --> */}
                                 <ul>
-                                    <li class="inquiry_box1">
+                                    <li className="inquiry_box1">
                                         <a href="#">전체 문의</a>
                                     </li>
 
-                                    <li class="inquiry_box2">
+                                    <li className="inquiry_box2">
                                         <a href="./inquiry_box2.html">
                                             홈페이지 문의
                                         </a>
                                     </li>
 
-                                    <li class="inquiry_box3">
+                                    <li className="inquiry_box3">
                                         <a href="./inquiry_box3.html">
                                             제품 문의
                                         </a>
@@ -123,7 +123,7 @@ function FAQ() {
                             </div>
 
                             {/* <!-- 구분, 제목 및 제품문의 --> */}
-                            <div class="inquiry_table">
+                            <div className="inquiry_table">
                                 {/* <!-- table? 인가 --> */}
                                 <figure>
                                     <table>
@@ -144,7 +144,7 @@ function FAQ() {
                                                 <th scope="row">
                                                     홈페이지 문의
                                                 </th>
-                                                <td class="button_td">
+                                                <td className="button_td">
                                                     <div>
                                                         <button>
                                                             새로 회원 가입
@@ -155,7 +155,7 @@ function FAQ() {
                                                                 alt=""
                                                             />
                                                         </button>
-                                                        <div class="innerCon">
+                                                        <div className="innerCon">
                                                             Irure exercitation
                                                             sit sint duis
                                                             aliquip aliquip anim
@@ -221,7 +221,7 @@ function FAQ() {
                                             </tr>
                                             <tr>
                                                 <th scope="row">제품 문의</th>
-                                                <td class="button_td">
+                                                <td className="button_td">
                                                     <div>
                                                         <button>
                                                             환불 요청 했는데
@@ -231,7 +231,7 @@ function FAQ() {
                                                                 alt=""
                                                             />
                                                         </button>
-                                                        <div class="innerCon">
+                                                        <div className="innerCon">
                                                             Irure exercitation
                                                             sit sint duis
                                                             aliquip aliquip anim
@@ -297,7 +297,7 @@ function FAQ() {
                                             </tr>
                                             <tr>
                                                 <th scope="row">제품 문의</th>
-                                                <td class="button_td">
+                                                <td className="button_td">
                                                     <div>
                                                         <button>
                                                             술이 금가서 왔어요
@@ -309,7 +309,7 @@ function FAQ() {
                                                                 alt=""
                                                             />
                                                         </button>
-                                                        <div class="innerCon">
+                                                        <div className="innerCon">
                                                             Irure exercitation
                                                             sit sint duis
                                                             aliquip aliquip anim
@@ -377,7 +377,7 @@ function FAQ() {
                                                 <th scope="row">
                                                     홈페이지 문의
                                                 </th>
-                                                <td class="button_td">
+                                                <td className="button_td">
                                                     <div>
                                                         <button>
                                                             새로 회원 가입
@@ -388,7 +388,7 @@ function FAQ() {
                                                                 alt=""
                                                             />
                                                         </button>
-                                                        <div class="innerCon">
+                                                        <div className="innerCon">
                                                             Irure exercitation
                                                             sit sint duis
                                                             aliquip aliquip anim
@@ -454,7 +454,7 @@ function FAQ() {
                                             </tr>
                                             <tr>
                                                 <th scope="row">제품 문의</th>
-                                                <td class="button_td">
+                                                <td className="button_td">
                                                     <div>
                                                         <button>
                                                             환불 요청 했는데
@@ -464,7 +464,7 @@ function FAQ() {
                                                                 alt=""
                                                             />
                                                         </button>
-                                                        <div class="innerCon">
+                                                        <div className="innerCon">
                                                             Irure exercitation
                                                             sit sint duis
                                                             aliquip aliquip anim
@@ -530,7 +530,7 @@ function FAQ() {
                                             </tr>
                                             <tr>
                                                 <th scope="row">제품 문의</th>
-                                                <td class="button_td">
+                                                <td className="button_td">
                                                     <div>
                                                         <button>
                                                             술이 금가서 왔어요
@@ -542,7 +542,7 @@ function FAQ() {
                                                                 alt=""
                                                             />
                                                         </button>
-                                                        <div class="innerCon">
+                                                        <div className="innerCon">
                                                             Irure exercitation
                                                             sit sint duis
                                                             aliquip aliquip anim
@@ -610,7 +610,7 @@ function FAQ() {
                                                 <th scope="row">
                                                     홈페이지 문의
                                                 </th>
-                                                <td class="button_td">
+                                                <td className="button_td">
                                                     <div>
                                                         <button>
                                                             새로 회원 가입
@@ -621,7 +621,7 @@ function FAQ() {
                                                                 alt=""
                                                             />
                                                         </button>
-                                                        <div class="innerCon">
+                                                        <div className="innerCon">
                                                             Irure exercitation
                                                             sit sint duis
                                                             aliquip aliquip anim
@@ -690,7 +690,7 @@ function FAQ() {
                                 </figure>
                             </div>
 
-                            <div class="inquiry_page_button">
+                            <div className="inquiry_page_button">
                                 {/* <!-- <-1,2,3-> 버튼 --> */}
                                 <b>
                                     <a href="#">1</a>
