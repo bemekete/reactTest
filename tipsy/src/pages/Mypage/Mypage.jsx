@@ -1,4 +1,4 @@
-import '../../styles/Mypage.css';
+import '../../styles/Mypage.scss';
 import Category from './Category';
 
 export default function Mypage() {
