@@ -39,17 +39,18 @@
     .joinbox > p {
         position: absolute;
         right: 30px;
+        font-weight: bold;
     }
 
     /* 표 */
     figcaption {
         padding-bottom: 10px;
+        font-weight: bold;
     }
 
     table {
         width: 100%;
         font-size: 85%;
-        border-top: lightgray 2px solid;
         margin-bottom: 10px;
         text-align: left;
         border-collapse: collapse;
