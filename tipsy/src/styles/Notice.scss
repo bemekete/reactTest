@@ -103,47 +103,47 @@
         overflow: hidden;
     }
 
-    table {
+    .notice_table table {
         width: 100%;
         border-collapse: collapse;
         font-size: smaller;
     }
 
-    thead {
+    .notice_table thead {
         background-color: #efefef;
     }
 
-    thead th {
+    .notice_table thead th {
         height: 50px;
     }
 
-    tr {
+    .notice_table tr {
         border-bottom: 1px solid silver;
         position: relative;
     }
 
-    td {
+    .notice_table td {
         text-align: start;
     }
 
-    tbody th {
+    .notice_table tbody th {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    tbody th,
-    tbody td button {
+    .notice_table tbody th,
+    .notice_table tbody td button {
         height: 45px;
     }
 
-    tbody td button {
+    .notice_table tbody td button {
         border: none;
         background: none;
         cursor: pointer;
     }
 
-    tbody .innerCon {
+    .notice_table tbody .innerCon {
         height: 0;
         overflow: hidden;
         white-space: pre-line;
@@ -151,7 +151,7 @@
         transition: 0.5s;
     }
 
-    tbody button img {
+    .notice_table tbody button img {
         height: 15px;
         vertical-align: middle;
 
@@ -162,12 +162,12 @@
         cursor: pointer;
     }
 
-    tbody .active {
+    .notice_table tbody .active {
         height: 300px;
         padding-bottom: 30px;
     }
 
-    .rotate {
+    .notice_table .rotate {
         transform: rotateX(180deg);
     }
 
