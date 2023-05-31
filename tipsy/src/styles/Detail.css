@@ -1,6 +1,6 @@
 /* ############################### container전체 ############################ */
 
-#container {
+#detail_container {
     max-width: 1240px;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,6 @@
 /* ===================== main ============================= */
 
 .detailScriptPage {
-    /* border: 1px solid; */
     width: 1240px;
     box-sizing: border-box;
     margin: 0 auto 200px;
@@ -22,24 +21,20 @@
 }
 
 .leftSide {
-    /* display: inline-block; */
     box-sizing: border-box;
     width: 70%;
     text-align: center;
     margin-top: 70px;
 
-    /* border: solid 1px lightgray; */
     border-radius: 10px;
 }
 
 .leftSide .flex {
-    /* border: 1px solid; */
     display: flex;
     width: 100%;
 }
 
 .rightSide {
-    /* display: inline-block; */
     margin-top: 25%;
     position: sticky;
     top: 50%;

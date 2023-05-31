@@ -6,7 +6,7 @@ function Detail() {
         <>
             {/* <!-- ======================================================== main ================================================== --> */}
             <main>
-                <div className="container">
+                <div className="detail_container">
                     <div className="contents">
                         <div className="detailScriptPage">
                             <div className="leftSide">
@@ -411,7 +411,7 @@ function Detail() {
                                                 처음 경험해보는 전통주가
                                                 망설여진다면
                                                 <br />
-                                                <a href="">
+                                                <a href="#">
                                                     [도르리 카카오톡 플친]
                                                 </a>
                                                 등록 후,
@@ -435,7 +435,7 @@ function Detail() {
                                                 id="review-checkbox"
                                                 type="checkbox"
                                             />
-                                            <label for="review-checkbox">
+                                            <label htmlFor="review-checkbox">
                                                 포토리뷰만 보기
                                             </label>
                                         </div>
@@ -523,8 +523,9 @@ function Detail() {
                                                 className="optOfProduct"
                                                 name="option"
                                                 required
+                                                defaultValue="default"
                                             >
-                                                <option value disabled selected>
+                                                <option value="default">
                                                     어떤 옵션을 원하시나요?
                                                 </option>
                                                 <option value="soju">
@@ -551,7 +552,7 @@ function Detail() {
                                                     id="pieces"
                                                     pattern="\d*"
                                                     value="0"
-                                                    readonly
+                                                    readOnly
                                                 />
                                                 <div className="numfor plus">
                                                     +
@@ -700,7 +701,7 @@ function Detail() {
                                                                 id="bottomPieces"
                                                                 pattern="\d*"
                                                                 value="0"
-                                                                readonly
+                                                                readOnly
                                                             />
                                                             개
                                                         </td>

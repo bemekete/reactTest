@@ -15,7 +15,7 @@ function header() {
                                 <a href="/login">로그인</a>
                             </li>
                             <li>
-                                <a href="./join/join.html">회원가입</a>
+                                <a href="/join">회원가입</a>
                             </li>
                             <li>
                                 <a href="./shopBasket/shopBasket.html">

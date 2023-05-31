@@ -1,6 +1,6 @@
 /* ############################### container전체 ############################ */
 
-#container {
+#mypage_container {
     max-width: 1240px;
     display: flex;
     flex-wrap: wrap;
@@ -52,7 +52,7 @@
     color: white;
 }
 
-.profile>div:first-child {
+.profile > div:first-child {
     font-weight: bold;
 }
 
@@ -62,7 +62,7 @@
     align-items: center;
 }
 
-.part1>div+div {
+.part1 > div + div {
     display: flex;
     gap: 20px;
 }
@@ -86,7 +86,7 @@
     padding: 20px 10px;
 }
 
-.shipmentBorder>p {
+.shipmentBorder > p {
     width: 100%;
     font-size: 14px;
     font-weight: bold;
