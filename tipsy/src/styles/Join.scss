@@ -9,81 +9,82 @@
     margin: 0 auto;
     box-sizing: border-box;
     clear: both;
-}
-/* ===================== main ============================= */
 
-.pageTitle {
-    width: 100%;
-    font-size: 30px;
-    text-align: center;
-    padding: 45px 0;
-}
+    /* ===================== main ============================= */
 
-#contents {
-    margin: auto;
-    width: 95%;
-}
+    .pageTitle {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        padding: 45px 0;
+    }
 
-/* ======================== 약관 박스 ===================== */
-.joinbox {
-    width: 718px;
-    margin: auto;
-    border: 1px lightgray solid;
-}
+    #contents {
+        margin: auto;
+        width: 95%;
+    }
 
-.joinbox > p {
-    font-size: 18px;
-    font-weight: bold;
-    border-bottom: black double;
-    margin: 0 5%;
-    padding: 10px;
-    padding-top: 30px;
-}
+    /* ======================== 약관 박스 ===================== */
+    .joinbox {
+        width: 718px;
+        margin: auto;
+        border: 1px lightgray solid;
+    }
 
-.agree.all {
-    border-bottom: 1px solid;
-}
+    .joinbox > p {
+        font-size: 18px;
+        font-weight: bold;
+        border-bottom: black double;
+        margin: 0 5%;
+        padding: 10px;
+        padding-top: 30px;
+    }
 
-.agree {
-    padding: 10px;
-    padding-top: 30px;
-    margin: 0 5%;
-    position: relative;
-}
+    .agree.all {
+        border-bottom: 1px solid;
+    }
 
-.agree span {
-    font-weight: bold;
-    color: darkred;
-}
+    .agree {
+        padding: 10px;
+        padding-top: 30px;
+        margin: 0 5%;
+        position: relative;
+    }
 
-.termOfRegister p {
-    font-size: 15px;
-    white-space: break-spaces;
-    padding: 5px;
-    height: 200px;
-    overflow: auto;
-    border: 1px solid lightgray;
-    margin: 0 6%;
-}
+    .agree span {
+        font-weight: bold;
+        color: darkred;
+    }
 
-.joinbox input {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(-100%, 50%);
-}
+    .termOfRegister p {
+        font-size: 15px;
+        white-space: break-spaces;
+        padding: 5px;
+        height: 200px;
+        overflow: auto;
+        border: 1px solid lightgray;
+        margin: 0 6%;
+    }
 
-.agree_submit {
-    text-align: center;
-    margin: 30px 0;
-}
+    .joinbox input {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-100%, 50%);
+    }
 
-.agree_submit button {
-    font-size: 85%;
-    color: white;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border: none;
-    background-color: #084875b7;
-    cursor: pointer;
+    .agree_submit {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .agree_submit button {
+        font-size: 85%;
+        color: white;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        background-color: #084875b7;
+        cursor: pointer;
+    }
 }
