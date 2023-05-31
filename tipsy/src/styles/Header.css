@@ -55,7 +55,7 @@ header {
     color: grey;
 }
 
-.serviceTabList li + li::before {
+.serviceTabList li+li::before {
     content: ' | ';
     color: grey;
 }
@@ -74,11 +74,11 @@ header {
     display: flex;
 }
 
-.mainCategoryList > li {
+.mainCategoryList>li {
     padding: 20px;
 }
 
-.mainCategoryList > li > a {
+.mainCategoryList>li>a {
     color: black;
     font-weight: bold;
 }
@@ -101,7 +101,7 @@ header {
     left: 0;
 }
 
-.detailCategoryList > ul {
+.detailCategoryList>ul {
     width: 12em;
     height: 16.25em;
 
