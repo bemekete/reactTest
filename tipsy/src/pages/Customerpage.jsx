@@ -63,7 +63,7 @@ export default function Customerpage() {
                             </a>
                         </li>
                         <li className="menu5">
-                            <a href="../faq/faq.html">
+                            <a href="/faq">
                                 <span className="menuicon FAQ"></span>
                                 <span>FAQ</span>
                             </a>

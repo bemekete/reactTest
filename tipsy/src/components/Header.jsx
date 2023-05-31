@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Header.css';
+import '../styles/Header.scss';
 
 function header() {
     return (
@@ -18,14 +18,10 @@ function header() {
                                 <a href="/join">회원가입</a>
                             </li>
                             <li>
-                                <a href="./shopBasket/shopBasket.html">
-                                    장바구니
-                                </a>
+                                <a href="/createorder">장바구니</a>
                             </li>
                             <li>
-                                <a href="/customerpage">
-                                    고객지원
-                                </a>
+                                <a href="/customerpage">고객지원</a>
                             </li>
                         </ul>
                     </div>
