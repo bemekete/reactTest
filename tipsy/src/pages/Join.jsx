@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Join.css';
+import '../styles/Join.scss';
 import joinform from '../pages/JoinForm';
 
 function Join() {
