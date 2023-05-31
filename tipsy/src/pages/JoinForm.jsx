@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/JoinForm.css';
 
 function JoinForm() {
     return (
