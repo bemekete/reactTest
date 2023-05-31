@@ -18,9 +18,7 @@ function header() {
                                 <a href="/join">회원가입</a>
                             </li>
                             <li>
-                                <a href="./shopBasket/shopBasket.html">
-                                    장바구니
-                                </a>
+                                <a href="/createorder">장바구니</a>
                             </li>
                             <li>
                                 <a href="/customerpage">고객지원</a>
