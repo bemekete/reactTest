@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Join.css';
+import joinform from '../pages/JoinForm';
 
 function Join() {
     return (
@@ -9,7 +10,7 @@ function Join() {
                 <div id="contents">
                     <div class="joinbox">
                         <p>약관 동의</p>
-                        <form action="../joinform/joinform.html">
+                        <form action="/joinform">
                             <div class="agree all">
                                 <label for="agree_all">
                                     회원가입 약관을 모두 확인했습니다.
@@ -363,7 +364,9 @@ function Join() {
                             </div>
                             <div class="agree_submit">
                                 <button type="button">취소</button>
-                                <button type="submit">확인</button>
+                                <button type="submit" onClick={joinform}>
+                                    확인
+                                </button>
                             </div>
                         </form>
                     </div>
