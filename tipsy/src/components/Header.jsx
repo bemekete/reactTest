@@ -86,7 +86,7 @@ function header() {
                         </li>
                     </ul>
                     <div className="mainSearch">
-                        <form action="./searchpage/searchpage.html">
+                        <form action="/searchresult">
                             <input
                                 type="search"
                                 name="mainSearch"
