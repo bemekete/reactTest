@@ -1,13 +1,13 @@
 import React from 'react';
-import '../styles/JoinForm.css';
+import '../styles/JoinForm.scss';
 
 function JoinForm() {
     return (
         <>
-            <div class="joinform_container">
-                <p class="pageTitle">회원가입</p>
-                <div class="contents">
-                    <form action="../login/login.html" class="joinbox">
+            <div id="joinform_container">
+                <p className="pageTitle">회원가입</p>
+                <div className="contents">
+                    <form action="../login/login.html" className="joinbox">
                         <p>
                             <span>*</span> 필수 입력 사항
                         </p>
@@ -67,7 +67,7 @@ function JoinForm() {
                                                 name="rePSW"
                                                 id="rePSW"
                                             />
-                                            <span class="confirmPSW notice">
+                                            <span className="confirmPSW notice">
                                                 일치하지 않음
                                             </span>
                                         </td>
@@ -247,7 +247,7 @@ function JoinForm() {
                                 </tbody>
                             </table>
                         </figure>
-                        <div class="joinButton">
+                        <div className="joinButton">
                             <button type="button" onclick="join_check();">
                                 회원가입
                             </button>
