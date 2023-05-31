@@ -9,8 +9,8 @@ function Mainpage() {
                     <a href="/">홈</a> &gt; 전체상품
                 </div>
             </div>
-            <div id="container">
-                <div id="search">
+            <div id="mainpage_container">
+                <div id="mainpage_search">
                     <div className="search_tit pageTit">카테고리</div>
                     <div className="search_list cate_list">
                         <div className="cate_list_item">

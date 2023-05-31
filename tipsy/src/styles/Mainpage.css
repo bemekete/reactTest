@@ -1,6 +1,6 @@
 /* ############################### container전체 ############################ */
 
-#container {
+#mainpage_container {
     display: flex;
     padding: 0 40px 100px 40px;
     margin: 0 auto;
@@ -26,7 +26,7 @@
 
 /* ################################### 왼쪽 네비게이션바 ################################### */
 
-#search {
+#mainpage_search {
     width: 240px;
     /* border: 1px solid; */
 }

@@ -2,9 +2,8 @@ import '../../styles/Mypage.css';
 import Category from './Category';
 
 export default function Mypage() {
-
     return (
-        <div id="container">
+        <div id="mypage_container">
             <p className="pageTitle">마이페이지</p>
             <div id="contents">
                 <div className="myPageBox">
@@ -18,13 +17,17 @@ export default function Mypage() {
                         </div>
                         <div className="profile part2">
                             <div>적립금</div>
-                            <div><span>0</span> 원</div>
+                            <div>
+                                <span>0</span> 원
+                            </div>
                         </div>
                         <div className="profile part3">
                             <a href="#">
                                 <div>쿠폰</div>
                             </a>
-                            <div><span>0</span> 개</div>
+                            <div>
+                                <span>0</span> 개
+                            </div>
                         </div>
                         <div className="profile part4">
                             <a href="#">
