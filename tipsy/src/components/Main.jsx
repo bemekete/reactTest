@@ -5,6 +5,7 @@ import Mainpage from '../pages/Mainpage';
 import Detail from '../pages/Detail';
 import Login from '../pages/Login';
 import Join from '../pages/Join';
+import Mypage from '../pages/Mypage/Mypage';
 
 function Main() {
     return (
@@ -17,6 +18,7 @@ function Main() {
                         <Route path="/detail" element={<Detail />} />
                         <Route path="/login" element={<Login />} />
                         <Route path="/join" element={<Join />} />
+                        <Route path="/mypage" element={<Mypage />} />
                     </Routes>
                 </BrowserRouter>
             </div>
