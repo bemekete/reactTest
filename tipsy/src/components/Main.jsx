@@ -12,6 +12,7 @@ import Customerpage from '../pages/Customerpage';
 import Notice from '../pages/Notice';
 import Searchpage from '../pages/Searchpage';
 import Simpleinquiry from '../pages/Simple_inquiry';
+import Orderend from '../pages/Orderend';
 
 function Main() {
     return (
@@ -28,7 +29,9 @@ function Main() {
                         <Route path="/mypage" element={<Mypage />} />
                         <Route path="/customerpage" element={<Customerpage />} />
                         <Route path="/notice" element={<Notice />} />
+                        <Route path="/searchresult" element={<Searchpage />} />
                         <Route path="/simpleinquiry" element={<Simpleinquiry />} />
+                        <Route path="/orderend" element={<Orderend />} />
                     </Routes>
                 </BrowserRouter>
             </div>
