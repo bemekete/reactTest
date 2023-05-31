@@ -23,7 +23,7 @@ function header() {
                                 </a>
                             </li>
                             <li>
-                                <a href="./customerpage/customerpage.html">
+                                <a href="/customerpage">
                                     고객지원
                                 </a>
                             </li>

@@ -1,14 +1,7 @@
-import { useState } from 'react';
-
 import '../../styles/Mypage.css';
 import Category from './Category';
 
 export default function Mypage() {
-    const [profileNum, setProfileNum] = useState(0);
-
-    function onClickProfile(e) {
-        e.preventDefault();
-    }
 
     return (
         <div id="container">
@@ -28,13 +21,13 @@ export default function Mypage() {
                             <div><span>0</span> 원</div>
                         </div>
                         <div className="profile part3">
-                            <a href="#" onClick={e => { onClickProfile(e); setProfileNum(2); }}>
+                            <a href="#">
                                 <div>쿠폰</div>
                             </a>
                             <div><span>0</span> 개</div>
                         </div>
                         <div className="profile part4">
-                            <a href="#" onClick={e => { onClickProfile(e); setProfileNum(6); }}>
+                            <a href="#">
                                 <div>마이 스타일</div>
                             </a>
                         </div>
@@ -61,7 +54,7 @@ export default function Mypage() {
                         </div>
                     </div>
                 </div>
-                <Category profileNum={profileNum} />
+                <Category />
             </div>
         </div>
     );

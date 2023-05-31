@@ -2,12 +2,8 @@ import { useState } from "react";
 
 import ListContents from "./Listcontents";
 
-export default function Category(profileNum, onClickProfile) {
+export default function Category() {
     const [categoryNum, setCategoryNum] = useState(0);
-
-    function onClickProfile(e) {
-        onClickCategory(e);
-    }
 
     function onClickCategory(e) {
         const category = document.querySelectorAll('.categoryList li');

@@ -1,10 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Home from '../pages/Home';
 import Mainpage from '../pages/Mainpage';
 import Detail from '../pages/Detail';
 import Login from '../pages/Login';
 import Mypage from '../pages/Mypage/Mypage';
+import Customerpage from '../pages/Customerpage';
+import Notice from '../pages/Notice';
 
 function Main() {
     return (
@@ -17,6 +20,8 @@ function Main() {
                         <Route path="/detail" element={<Detail />} />
                         <Route path="/login" element={<Login />} />
                         <Route path="/mypage" element={<Mypage />} />
+                        <Route path="/customerpage" element={<Customerpage />} />
+                        <Route path="/notice" element={<Notice />} />
                     </Routes>
                 </BrowserRouter>
             </div>
