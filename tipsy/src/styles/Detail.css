@@ -1,6 +1,6 @@
 /* ############################### container전체 ############################ */
 
-#container {
+#detail_container {
     max-width: 1240px;
     display: flex;
     flex-direction: column;
