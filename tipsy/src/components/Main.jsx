@@ -13,6 +13,9 @@ import Notice from '../pages/Notice';
 import Searchpage from '../pages/Searchpage';
 import Simpleinquiry from '../pages/Simple_inquiry';
 import Orderend from '../pages/Orderend';
+import Eventboard from '../pages/Eventboard';
+import FindId from '../pages/Find_id';
+import FindPassword from '../pages/Find_password';
 
 function Main() {
     return (
@@ -32,6 +35,9 @@ function Main() {
                         <Route path="/searchresult" element={<Searchpage />} />
                         <Route path="/simpleinquiry" element={<Simpleinquiry />} />
                         <Route path="/orderend" element={<Orderend />} />
+                        <Route path="/event" element={<Eventboard />} />
+                        <Route path="/findid" element={<FindId />} />
+                        <Route path="/findpassword" element={<FindPassword />} />
                     </Routes>
                 </BrowserRouter>
             </div>
