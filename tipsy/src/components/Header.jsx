@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Header.css';
+import '../styles/Header.scss';
 
 function header() {
     return (
@@ -23,9 +23,7 @@ function header() {
                                 </a>
                             </li>
                             <li>
-                                <a href="/customerpage">
-                                    고객지원
-                                </a>
+                                <a href="/customerpage">고객지원</a>
                             </li>
                         </ul>
                     </div>

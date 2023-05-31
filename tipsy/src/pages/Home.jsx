@@ -1,10 +1,10 @@
 import React from 'react';
-import '../styles/Home.css';
+import '../styles/Home.scss';
 
 function Home() {
     return (
         <>
-            <main>
+            <main id="home_main">
                 <div className="main_container">
                     <ul className="slide_list">
                         <li>
@@ -229,9 +229,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <a href="/" className="topfloatingbar">
-                    /
-                </a>
+                <a href="/" className="topfloatingbar"></a>
             </main>
         </>
     );

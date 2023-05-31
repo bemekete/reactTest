@@ -6,12 +6,12 @@ function Join() {
     return (
         <>
             <div id="join_container">
-                <p class="pageTitle">회원가입</p>
+                <p className="pageTitle">회원가입</p>
                 <div id="contents">
-                    <div class="joinbox">
+                    <div className="joinbox">
                         <p>약관 동의</p>
                         <form action="/joinform">
-                            <div class="agree all">
+                            <div className="agree all">
                                 <label for="agree_all">
                                     회원가입 약관을 모두 확인했습니다.
                                 </label>
@@ -23,7 +23,7 @@ function Join() {
                                     onclick="checkAll()"
                                 />
                             </div>
-                            <div class="agree use">
+                            <div className="agree use">
                                 <label for="agree_use">
                                     이용약관 동의 <span>&#42;필수</span>
                                 </label>
@@ -35,7 +35,7 @@ function Join() {
                                     required
                                 />
                             </div>
-                            <div class="termOfRegister">
+                            <div className="termOfRegister">
                                 <p>
                                     제22조(저작권의 귀속 및 이용제한) ① “몰“이
                                     작성한 저작물에 대한 저작권 기타
@@ -71,7 +71,7 @@ function Join() {
                                     적용합니다.
                                 </p>
                             </div>
-                            <div class="agree personal">
+                            <div className="agree personal">
                                 <label for="agree_personal">
                                     개인정보 수집 및 이용 동의{' '}
                                     <span>&#42;필수</span>
@@ -84,7 +84,7 @@ function Join() {
                                     required
                                 />
                             </div>
-                            <div class="termOfRegister">
+                            <div className="termOfRegister">
                                 <p>
                                     개인정보처리방침 [차례] 1. 총칙 2. 개인정보
                                     수집에 대한 동의 3. 개인정보의 수집 및
@@ -350,7 +350,7 @@ function Join() {
                                     01일 2) 시행일자 : 2018년 05월 01일
                                 </p>
                             </div>
-                            <div class="agree age">
+                            <div className="agree age">
                                 <label for="agree_age">
                                     만 19세 이상입니다. <span>&#42;필수</span>
                                 </label>
@@ -362,7 +362,7 @@ function Join() {
                                     required
                                 />
                             </div>
-                            <div class="agree_submit">
+                            <div className="agree_submit">
                                 <button type="button">취소</button>
                                 <button type="submit" onClick={joinform}>
                                     확인
