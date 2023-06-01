@@ -61,7 +61,7 @@ function Login() {
                             <div className="find_div">
                                 <span>
                                     <a
-                                        href="../find/find_id.html"
+                                        href="/findid"
                                         className="find"
                                     >
                                         <strong>아이디찾기 &#124; </strong>
@@ -69,7 +69,7 @@ function Login() {
                                 </span>
                                 <span>
                                     <a
-                                        href="../find/find_password.html"
+                                        href="/findpassword"
                                         className="find"
                                     >
                                         <strong>비밀번호찾기</strong>
