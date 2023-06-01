@@ -18,9 +18,7 @@ function header() {
                                 <a href="/join">회원가입</a>
                             </li>
                             <li>
-                                <a href="./shopBasket/shopBasket.html">
-                                    장바구니
-                                </a>
+                                <a href="/createorder">장바구니</a>
                             </li>
                             <li>
                                 <a href="/customerpage">고객지원</a>
@@ -84,7 +82,7 @@ function header() {
                         </li>
                     </ul>
                     <div className="mainSearch">
-                        <form action="./searchpage/searchpage.html">
+                        <form action="/searchresult">
                             <input
                                 type="search"
                                 name="mainSearch"

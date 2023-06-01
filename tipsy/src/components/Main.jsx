@@ -10,6 +10,14 @@ import Mypage from '../pages/Mypage/Mypage';
 import JoinForm from '../pages/JoinForm';
 import Customerpage from '../pages/Customerpage';
 import Notice from '../pages/Notice';
+import Searchpage from '../pages/Searchpage';
+import Simpleinquiry from '../pages/Simple_inquiry';
+import Orderend from '../pages/Orderend';
+import Eventboard from '../pages/Eventboard';
+import FindId from '../pages/Find_id';
+import FindPassword from '../pages/Find_password';
+import FAQ from '../pages/FAQ';
+import CreateOrder from '../pages/CreateOrder';
 
 function Main() {
     return (
@@ -24,8 +32,19 @@ function Main() {
                         <Route path="/join" element={<Join />} />
                         <Route path="/joinform" element={<JoinForm />} />
                         <Route path="/mypage" element={<Mypage />} />
-                        <Route path="/customerpage" element={<Customerpage />} />
+                        <Route
+                            path="/customerpage"
+                            element={<Customerpage />}
+                        />
                         <Route path="/notice" element={<Notice />} />
+                        <Route path="/searchresult" element={<Searchpage />} />
+                        <Route path="/simpleinquiry" element={<Simpleinquiry />} />
+                        <Route path="/orderend" element={<Orderend />} />
+                        <Route path="/event" element={<Eventboard />} />
+                        <Route path="/findid" element={<FindId />} />
+                        <Route path="/findpassword" element={<FindPassword />} />
+                        <Route path="/faq" element={<FAQ />} />
+                        <Route path="/createorder" element={<CreateOrder />} />
                     </Routes>
                 </BrowserRouter>
             </div>

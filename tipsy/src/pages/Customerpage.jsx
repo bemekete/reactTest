@@ -1,13 +1,13 @@
 import React from 'react';
-import '../styles/Customerpage.css';
+import '../styles/Customerpage.scss';
 
 export default function Customerpage() {
     return (
         <div id="customerpage_container">
-            <p class="pageTitle">고객지원</p>
+            <p className="pageTitle">고객지원</p>
             <div id="contents">
-                <div class="customerBox">
-                    <div class="guidement">
+                <div className="customerBox">
+                    <div className="guidement">
                         <p>
                             월요일 ~ 금요일: 08:30 ~ 17:30 | 점심시간: 12:00 ~
                             13:00 | 주말 및 공휴일 휴무
@@ -36,41 +36,41 @@ export default function Customerpage() {
                         </dl>
                     </div>
                 </div>
-                <div class="customerMenu">
+                <div className="customerMenu">
                     <ul>
-                        <li class="menu1">
+                        <li className="menu1">
                             <a href="/notice">
-                                <span class="menuicon alert"></span>
+                                <span className="menuicon alert"></span>
                                 <span>공지사항</span>
                             </a>
                         </li>
-                        <li class="menu2">
+                        <li className="menu2">
                             <a href="../eventboard/eventboard.html">
-                                <span class="menuicon event"></span>
+                                <span className="menuicon event"></span>
                                 <span>이벤트</span>
                             </a>
                         </li>
-                        <li class="menu3">
+                        <li className="menu3">
                             <a href="../map/map.html">
-                                <span class="menuicon map"></span>
+                                <span className="menuicon map"></span>
                                 <span>매장찾기</span>
                             </a>
                         </li>
-                        <li class="menu4">
+                        <li className="menu4">
                             <a href="/mypage">
-                                <span class="menuicon myPage"></span>
+                                <span className="menuicon myPage"></span>
                                 <span>마이페이지</span>
                             </a>
                         </li>
-                        <li class="menu5">
-                            <a href="../faq/faq.html">
-                                <span class="menuicon FAQ"></span>
-                                <span>QnA</span>
+                        <li className="menu5">
+                            <a href="/faq">
+                                <span className="menuicon FAQ"></span>
+                                <span>FAQ</span>
                             </a>
                         </li>
-                        <li class="menu6">
-                            <a href="../simple_inquiry/simple_inquiry.html">
-                                <span class="menuicon2 Simpleinquiry"></span>
+                        <li className="menu6">
+                            <a href="/simpleinquiry">
+                                <span className="menuicon2 Simpleinquiry"></span>
                                 <span>간편문의</span>
                             </a>
                         </li>
