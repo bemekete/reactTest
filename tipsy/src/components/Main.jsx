@@ -18,6 +18,7 @@ import FindId from '../pages/Find_id';
 import FindPassword from '../pages/Find_password';
 import FAQ from '../pages/FAQ';
 import CreateOrder from '../pages/CreateOrder';
+import Shopbasket from '../pages/Shopbasket';
 
 function Main() {
     return (
@@ -45,6 +46,7 @@ function Main() {
                         <Route path="/findpassword" element={<FindPassword />} />
                         <Route path="/faq" element={<FAQ />} />
                         <Route path="/createorder" element={<CreateOrder />} />
+                        <Route path="/shopbasket" element={<Shopbasket />} />
                     </Routes>
                 </BrowserRouter>
             </div>
