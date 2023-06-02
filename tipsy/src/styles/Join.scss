@@ -10,7 +10,6 @@
     box-sizing: border-box;
     clear: both;
 
-
     /* ===================== main ============================= */
 
     .pageTitle {
@@ -32,7 +31,7 @@
         border: 1px lightgray solid;
     }
 
-    .joinbox>p {
+    .joinbox > p {
         font-size: 18px;
         font-weight: bold;
         border-bottom: black double;
@@ -58,7 +57,7 @@
     }
 
     .termOfRegister p {
-        font-size: 12px;
+        font-size: 15px;
         white-space: pre-line;
         padding: 5px;
         height: 200px;

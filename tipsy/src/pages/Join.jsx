@@ -12,7 +12,7 @@ function Join() {
                         <p>약관 동의</p>
                         <form action="/joinform">
                             <div className="agree all">
-                                <label for="agree_all">
+                                <label htmlFor="agree_all">
                                     회원가입 약관을 모두 확인했습니다.
                                 </label>
                                 <input
@@ -20,11 +20,11 @@ function Join() {
                                     name="register_agree"
                                     id="agree_all"
                                     value="agree_all"
-                                    onclick="checkAll()"
+                                    onClick="checkAll()"
                                 />
                             </div>
                             <div className="agree use">
-                                <label for="agree_use">
+                                <label htmlFor="agree_use">
                                     이용약관 동의 <span>&#42;필수</span>
                                 </label>
                                 <input
@@ -72,7 +72,7 @@ function Join() {
                                 </p>
                             </div>
                             <div className="agree personal">
-                                <label for="agree_personal">
+                                <label htmlFor="agree_personal">
                                     개인정보 수집 및 이용 동의{' '}
                                     <span>&#42;필수</span>
                                 </label>
@@ -351,7 +351,7 @@ function Join() {
                                 </p>
                             </div>
                             <div className="agree age">
-                                <label for="agree_age">
+                                <label htmlFor="agree_age">
                                     만 19세 이상입니다. <span>&#42;필수</span>
                                 </label>
                                 <input

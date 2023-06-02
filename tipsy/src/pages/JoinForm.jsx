@@ -12,8 +12,8 @@ function JoinForm() {
                             <span>*</span> 필수 입력 사항
                         </p>
                         <figure>
+                            <figcaption>기본정보</figcaption>
                             <table>
-                                <figcaption>기본정보</figcaption>
                                 <colgroup>
                                     <col />
                                     <col />
@@ -27,8 +27,8 @@ function JoinForm() {
                                         <td>
                                             <input
                                                 type="text"
-                                                minlength="4"
-                                                maxlength="16"
+                                                minLength="4"
+                                                maxLength="16"
                                                 name="userID"
                                                 id="userID"
                                             />
@@ -44,8 +44,8 @@ function JoinForm() {
                                         <td>
                                             <input
                                                 type="password"
-                                                minlength="6"
-                                                maxlength="16"
+                                                minLength="6"
+                                                maxLength="16"
                                                 name="userPSW"
                                                 id="userPSW"
                                             />
@@ -62,8 +62,8 @@ function JoinForm() {
                                         <td>
                                             <input
                                                 type="password"
-                                                minlength="6"
-                                                maxlength="16"
+                                                minLength="6"
+                                                maxLength="16"
                                                 name="rePSW"
                                                 id="rePSW"
                                             />
@@ -155,8 +155,8 @@ function JoinForm() {
                                         <td>
                                             <input
                                                 type="text"
-                                                minlength="2"
-                                                maxlength="10"
+                                                minLength="2"
+                                                maxLength="10"
                                                 name="userName"
                                                 id="userName"
                                             />
@@ -169,7 +169,7 @@ function JoinForm() {
                                                 type="text"
                                                 name="userPostcode1"
                                                 size="10px"
-                                                readonly
+                                                readOnly
                                             />
                                             <a href="#">우편번호</a>
                                             <br />
@@ -177,7 +177,7 @@ function JoinForm() {
                                                 type="text"
                                                 name="userPostcode2"
                                                 size="50"
-                                                readonly
+                                                readOnly
                                             />
                                             <span>기본주소</span>
                                             <br />
@@ -207,8 +207,8 @@ function JoinForm() {
                                             <input
                                                 type="text"
                                                 name="userPhone[]"
-                                                minlength="3"
-                                                maxlength="4"
+                                                minLength="3"
+                                                maxLength="4"
                                                 size="5px"
                                                 id="secondNum"
                                                 value="1234"
@@ -218,15 +218,15 @@ function JoinForm() {
                                             <input
                                                 type="text"
                                                 name="userPhone[]"
-                                                minlength="3"
-                                                maxlength="4"
+                                                minLength="3"
+                                                maxLength="4"
                                                 size="5px"
                                                 id="thirdNum"
                                                 value="1234"
                                                 disabled
                                             />
                                             {/* <!-- <a href="#">인증번호전송</a><br /> --> */}
-                                            {/* <!-- <input type="text" name="userPhoneVerification" minlength="6" maxlength="6"
+                                            {/* <!-- <input type="text" name="userPhoneVerification" minLength="6" maxLength="6"
                                             size="24px" id="verificationCode" />
                                         <a href="#">인증번호확인</a> --> */}
                                         </td>
@@ -248,7 +248,7 @@ function JoinForm() {
                             </table>
                         </figure>
                         <div className="joinButton">
-                            <button type="button" onclick="join_check();">
+                            <button type="button" onClick="join_check();">
                                 회원가입
                             </button>
                         </div>
