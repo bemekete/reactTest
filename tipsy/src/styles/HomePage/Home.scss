@@ -4,7 +4,7 @@
 
     /* ////////////////////////////////// 슬라이드쇼 ////////////////////////////////////// */
 
-    .main_container {
+    .slide_container {
         width: 1200px;
         height: 400px;
         margin: 0 auto;
@@ -70,9 +70,9 @@
         /* width: 300px; */
         height: 10px;
         background-color: gray;
-        opacity: 0.3;
+        // opacity: 0.3;
         cursor: pointer;
-        transition: all 0.5s ease-in-out;
+        // transition: all 0.5s ease-in-out;
     }
 
     .pageOfPages {
@@ -98,15 +98,6 @@
 
     .nonVisible {
         visibility: hidden;
-    }
-
-    .pager .nowPage {
-        opacity: 1;
-        cursor: default;
-    }
-
-    .anime {
-        transition: all 0.5s ease-in-out;
     }
 
     /* //////////////////////////////////이미지 헤더////////////////////////////////////// */
@@ -357,30 +348,30 @@
     }
 
     .event_img1 div:nth-of-type(2)::after {
-        background: url(../assets/home_img/gift-text.png) center/cover;
+        background: url(../../assets/home_img/gift-text.png) center/cover;
     }
 
     .event_img1 div:nth-of-type(1)::after {
-        background: url('../assets/home_img/gift-small.png') no-repeat
+        background: url('../../assets/home_img/gift-small.png') no-repeat
             center/800px 350px;
     }
 
     .event_img2 div:nth-of-type(1)::after {
-        background: url('../assets/home_img/mak-text.png') center/cover;
+        background: url('../../assets/home_img/mak-text.png') center/cover;
     }
 
     .event_img2 div:nth-of-type(2)::after {
-        background: url('../assets/home_img/makyo-small.jpg') no-repeat
+        background: url('../../assets/home_img/makyo-small.jpg') no-repeat
             center/800px 350px;
     }
 
     .event_img3 div:nth-of-type(1)::after {
-        background: url('../assets/home_img/anju-small.png') no-repeat
+        background: url('../../assets/home_img/anju-small.png') no-repeat
             center/800px 350px;
     }
 
     .event_img3 div:nth-of-type(2)::after {
-        background: url(../assets/home_img/anju-text.png) center/cover;
+        background: url(../../assets/home_img/anju-text.png) center/cover;
     }
 
     /* ------------------------------------------ */
@@ -424,7 +415,7 @@
     /* ======================================1번째 단락 이미지 hover======================== */
 
     .event_img1 div:nth-of-type(1):hover::after {
-        background: url('../assets/home_img/gift-main.png') no-repeat
+        background: url('../../assets/home_img/gift-main.png') no-repeat
             center/1200px 350px;
     }
 
@@ -456,14 +447,14 @@
     }
 
     .event_img2 div:nth-of-type(2):hover::after {
-        background: url('../assets/home_img/makyo-main.png') no-repeat
+        background: url('../../assets/home_img/makyo-main.png') no-repeat
             center/1200px 350px;
     }
 
     /* =========================================3번쨰 단락 이미지 hover========================= */
 
     .event_img3 div:nth-of-type(1):hover::after {
-        background: url('../assets/home_img/anju-main.png') no-repeat
+        background: url('../../assets/home_img/anju-main.png') no-repeat
             center/1200px 350px;
     }
 
@@ -595,7 +586,7 @@
     }
 
     .review1 > div:nth-of-type(1) {
-        background: url(../assets/home_img/1.jpg) center/130px no-repeat;
+        background: url(../../assets/home_img/1.jpg) center/130px no-repeat;
     }
 
     .review2 > div:nth-of-type(1) {

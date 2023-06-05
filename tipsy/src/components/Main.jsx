@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Home from '../pages/Home';
+import Home from '../pages/HomePage/Home';
 import Mainpage from '../pages/Mainpage';
 import Detail from '../pages/Detail';
 import Login from '../pages/Login';
@@ -39,11 +39,17 @@ function Main() {
                         />
                         <Route path="/notice" element={<Notice />} />
                         <Route path="/searchresult" element={<Searchpage />} />
-                        <Route path="/simpleinquiry" element={<Simpleinquiry />} />
+                        <Route
+                            path="/simpleinquiry"
+                            element={<Simpleinquiry />}
+                        />
                         <Route path="/orderend" element={<Orderend />} />
                         <Route path="/event" element={<Eventboard />} />
                         <Route path="/findid" element={<FindId />} />
-                        <Route path="/findpassword" element={<FindPassword />} />
+                        <Route
+                            path="/findpassword"
+                            element={<FindPassword />}
+                        />
                         <Route path="/faq" element={<FAQ />} />
                         <Route path="/createorder" element={<CreateOrder />} />
                         <Route path="/shopbasket" element={<Shopbasket />} />
