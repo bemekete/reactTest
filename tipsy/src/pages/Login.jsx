@@ -30,7 +30,7 @@ function Login() {
                                                 id="login_id"
                                                 name="login_id"
                                                 placeholder="아이디를 입력하세요."
-                                                autofocus
+                                                autoFocus
                                                 required
                                             />
                                         </li>
@@ -46,14 +46,14 @@ function Login() {
                                             id="login_pw"
                                             name="login_pw"
                                             placeholder="비밀번호를 입력하세요."
-                                            required
+                                            required    
                                         />
                                     </li>
                                 </ul>
                             </div>
                             <div className="keepIdDiv">
                                 <input id="keepId" type="checkbox" />
-                                <label for="keepId">아이디 저장</label>
+                                <label htmlFor="keepId">아이디 저장</label>
                             </div>
                             <div>
                                 <button className="login_btn">로그인</button>
@@ -61,7 +61,7 @@ function Login() {
                             <div className="find_div">
                                 <span>
                                     <a
-                                        href="../find/find_id.html"
+                                        href="/findid"
                                         className="find"
                                     >
                                         <strong>아이디찾기 &#124; </strong>
@@ -69,7 +69,7 @@ function Login() {
                                 </span>
                                 <span>
                                     <a
-                                        href="../find/find_password.html"
+                                        href="/findpassword"
                                         className="find"
                                     >
                                         <strong>비밀번호찾기</strong>
