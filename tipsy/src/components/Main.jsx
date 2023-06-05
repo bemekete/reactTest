@@ -16,6 +16,7 @@ import Orderend from '../pages/Orderend';
 import Eventboard from '../pages/Eventboard';
 import FindId from '../pages/Find_id';
 import FindPassword from '../pages/Find_password';
+import Alcstyletest from '../pages/Alcstyletest';
 
 function Main() {
     return (
@@ -38,6 +39,7 @@ function Main() {
                         <Route path="/event" element={<Eventboard />} />
                         <Route path="/findid" element={<FindId />} />
                         <Route path="/findpassword" element={<FindPassword />} />
+                        <Route path="/alcstyletest" element={<Alcstyletest />} />
                     </Routes>
                 </BrowserRouter>
             </div>
