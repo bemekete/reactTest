@@ -1,0 +1,112 @@
+.board_table {
+    width: 90%;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.board_table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: smaller;
+}
+
+.board_table thead {
+    background-color: #efefef;
+}
+
+.board_table thead th {
+    height: 50px;
+}
+
+.board_table tr {
+    border-bottom: 1px solid silver;
+    position: relative;
+}
+
+.board_table td {
+    text-align: start;
+}
+
+.board_table tbody th {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.board_table tbody th,
+.board_table tbody td button {
+    height: 45px;
+}
+
+.board_table tbody td button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.board_table tbody .innerCon {
+    height: 0;
+    overflow: hidden;
+    white-space: pre-line;
+
+    transition: 0.5s;
+}
+
+.board_table tbody button img {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+
+    position: absolute;
+    right: 10%;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.board_table tbody .active {
+    height: 300px;
+    padding-bottom: 30px;
+}
+
+.board_table .rotate {
+    transform: rotateX(180deg);
+}
+
+/* <-1,2,3-> */
+
+.board_page_button {
+    margin: 20px;
+    margin-bottom: 100px;
+}
+
+.board_page_button a {
+    font-weight: bold;
+    background-color: #efefef;
+    border-radius: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.board_page_button::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../assets/notice_img/arrow-left.svg) 0/100% 100%;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.board_page_button::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../assets/notice_img/arrow-right.svg) 0/100% 100%;
+    vertical-align: middle;
+    margin-left: 5px;
+}
