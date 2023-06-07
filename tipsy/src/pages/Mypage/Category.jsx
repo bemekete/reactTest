@@ -1,6 +1,11 @@
 import { useState } from "react";
 
-import ListContents from "./Listcontents";
+import Shipment from './contents/Shipment';
+// import Coupon from './contents/Coupon';
+import Postbox from './contents/Postbox';
+import Likecon from './contents/Likecon';
+import Currentcon from './contents/Currentcon';
+import Alcstyle from './contents/Alcstyle';
 
 export default function Category() {
     const [categoryNum, setCategoryNum] = useState(0);
@@ -16,15 +21,34 @@ export default function Category() {
         e.target.parentNode.classList.add('nowpage');
     }
 
+    function ViewCon() {
+        switch (categoryNum) {
+            case 0:
+                return <Shipment />;
+            case 1:
+                // return <Coupon />;
+            case 2:
+                return <Postbox />;
+            case 3:
+                return <Likecon />;
+            case 4:
+                return <Currentcon />;
+            case 5:
+                return <Alcstyle />;
+            default:
+                return <Shipment />;
+        }
+    }
+
     return (
         <div className="category" id="category">
             <ul className="categoryList">
                 <li className="nowpage">
                     <a href="#" onClick={e => { onClickCategory(e); setCategoryNum(0); }}>주문내역</a>
                 </li>
-                <li>
+                {/* <li>
                     <a href="#" onClick={e => { onClickCategory(e); setCategoryNum(1); }}>쿠폰</a>
-                </li>
+                </li> */}
                 <li>
                     <a href="#" onClick={e => { onClickCategory(e); setCategoryNum(2); }}>게시글</a>
                 </li>
@@ -38,7 +62,9 @@ export default function Category() {
                     <a href="#" onClick={e => { onClickCategory(e); setCategoryNum(5); }}>나의 음주 스타일</a>
                 </li>
             </ul>
-            <ListContents categoryNum={categoryNum} />
+            <div className="listContents">
+                {ViewCon()}
+            </div>
         </div>
     )
 }
