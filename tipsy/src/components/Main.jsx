@@ -45,7 +45,7 @@ function Main() {
                             element={<Simpleinquiry />}
                         />
                         <Route path="/orderend" element={<Orderend />} />
-                        <Route path="/event" element={<Eventboard />} />
+                        <Route path="/eventboard" element={<Eventboard />} />
                         <Route path="/findid" element={<FindId />} />
                         <Route
                             path="/findpassword"

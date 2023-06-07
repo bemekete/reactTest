@@ -2,7 +2,9 @@
 /* FAQ text */
 #FAQ_main {
     #faq_maincontainer {
+        max-width: 1240px;
         text-align: center;
+        margin: 0 auto;
     }
 
     .FAQ_first_text {
@@ -36,12 +38,12 @@
         margin: 40px;
     }
 
-    .Qbox_container > ul {
+    .Qbox_container>ul {
         /* display: flex; */
         white-space: nowrap;
     }
 
-    .Qbox_container > ul > li {
+    .Qbox_container>ul>li {
         display: inline-block;
         background-color: #adc6dbfd;
         height: 100px;
@@ -52,7 +54,7 @@
         line-height: 100px;
     }
 
-    .Qbox_container > ul > li > ul {
+    .Qbox_container>ul>li>ul {
         background-color: rgb(248, 248, 248);
         width: 100%;
         position: absolute;
@@ -63,11 +65,11 @@
         display: none;
     }
 
-    .Qbox_container > ul > li > ul li {
+    .Qbox_container>ul>li>ul li {
         margin: 20px;
     }
 
-    .Qbox_container > ul > li:hover ul {
+    .Qbox_container>ul>li:hover ul {
         display: block;
     }
 
@@ -79,7 +81,7 @@
         margin-left: 20px;
     }
 
-    .Qbox_container > ul > li::before {
+    .Qbox_container>ul>li::before {
         content: 'Q.';
         font-size: 1.2em;
         font-weight: bold;
@@ -97,7 +99,7 @@
         /* word-break: break-all; */
     }
 
-    .Qbox_container > ul > li > ul > li p::before {
+    .Qbox_container>ul>li>ul>li p::before {
         content: 'A.';
         font-size: 1.2em;
         font-weight: bold;
@@ -188,117 +190,4 @@
     }
 
     /* 문의 box 클릭시 이동 후 높이 */
-
-    /* 구분, 제목 및 제품문의 */
-
-    .inquiry_table {
-        width: 90%;
-        margin: auto;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: smaller;
-    }
-
-    thead {
-        background-color: #efefef;
-    }
-
-    thead th {
-        height: 50px;
-    }
-
-    tr {
-        border-bottom: 1px solid silver;
-        position: relative;
-    }
-
-    td {
-        text-align: start;
-    }
-
-    tbody th {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    tbody th,
-    tbody td button {
-        height: 45px;
-    }
-
-    tbody td button {
-        border: none;
-        background: none;
-        cursor: pointer;
-    }
-
-    tbody .innerCon {
-        height: 0;
-        overflow: hidden;
-        white-space: pre-line;
-
-        transition: 0.5s;
-    }
-
-    tbody button img {
-        height: 15px;
-        vertical-align: middle;
-
-        position: absolute;
-        right: 10%;
-
-        transition: 0.3s;
-        cursor: pointer;
-    }
-
-    tbody .active {
-        height: 300px;
-        padding-bottom: 30px;
-    }
-
-    .rotate {
-        transform: rotateX(180deg);
-    }
-
-    /* <-1,2,3-> */
-
-    .inquiry_page_button {
-        margin: 20px;
-        margin-bottom: 100px;
-    }
-
-    .inquiry_page_button a {
-        font-weight: bold;
-        background-color: #efefef;
-        border-radius: 50%;
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-    }
-
-    .inquiry_page_button::before {
-        background: url(../assets/faq_img/arrow-left.svg) 0/100% 100%;
-        margin-right: 5px;
-    }
-
-    .inquiry_page_button::after {
-        background: url(../assets/faq_img/arrow-right.svg) 0/100% 100%;
-        margin-left: 5px;
-    }
-
-    .inquiry_page_button::before,
-    .inquiry_page_button::after {
-        content: '';
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        vertical-align: middle;
-    }
 }
