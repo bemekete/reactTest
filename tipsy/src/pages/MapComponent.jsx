@@ -6,12 +6,12 @@ function MapComponent() {
         var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
         var options = {
             //지도를 생성할 때 필요한 기본 옵션
-            center: new kakao.maps.LatLng(37.3503814, 127.1072135), //지도의 중심좌표.
+            center: new kakao.maps.LatLng(37.3496888, 127.1069946), //지도의 중심좌표.
             level: 3, //지도의 레벨(확대, 축소 정도)
         };
         var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
         // 마커가 표시될 위치입니다
-        var markerPosition = new kakao.maps.LatLng(37.3503814, 127.1072135);
+        var markerPosition = new kakao.maps.LatLng(37.3496888, 127.1069946);
 
         // 마커를 생성합니다
         var marker = new kakao.maps.Marker({
@@ -33,8 +33,8 @@ function MapComponent() {
         map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
         let iwContent =
-                '<div style="padding:5px;"><p style="font-weight: bold; font-size: 25px; margin-bottom: 10px">Tipsy</p><p style="margin-bottom: 5px;">경기도 성남시 분당구 돌마로 47 5층</p><a href="https://map.kakao.com/link/map/Tipsy,37.3503814,127.1072135" style="color:blue; font-size: 15px;" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/Tipsy,37.3503814,127.1072135" style="color:blue; font-size: 15px;" target="_blank">길찾기</a></div>',
-            iwPosition = new kakao.maps.LatLng(37.3503814, 127.1072135); //인포윈도우 표시 위치입니다
+                '<div style="padding:5px;"><p style="font-weight: bold; font-size: 25px; margin-bottom: 10px">Tipsy</p><p style="margin-bottom: 5px;">경기도 성남시 분당구 돌마로 46 5층</p><a href="https://map.kakao.com/link/map/Tipsy,37.3503814,127.1072135" style="color:blue; font-size: 15px;" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/Tipsy,37.3503814,127.1072135" style="color:blue; font-size: 15px;" target="_blank">길찾기</a></div>',
+            iwPosition = new kakao.maps.LatLng(37.3496888, 127.1069946); //인포윈도우 표시 위치입니다
 
         // 인포윈도우를 생성합니다
         let infowindow = new kakao.maps.InfoWindow({
