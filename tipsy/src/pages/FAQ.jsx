@@ -4,6 +4,24 @@ import '../styles/FAQ.scss';
 import Boardtable from './Boardtable';
 
 function FAQ() {
+    const items = [
+        {
+            scope: "1",
+            title: "faq1",
+            contents: "faq1",
+        },
+        {
+            scope: "2",
+            title: "faq2",
+            contents: "faq2",
+        },
+        {
+            scope: "3",
+            title: "faq3",
+            contents: "faq3",
+        },
+    ]
+
     return (
         <>
             <div id="FAQ_main">
@@ -125,7 +143,7 @@ function FAQ() {
                             </div>
 
                             {/* <!-- 구분, 제목 및 제품문의 --> */}
-                            <Boardtable />
+                            <Boardtable items={items} />
                         </div>
                     </div>
                 </div>
