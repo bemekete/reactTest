@@ -153,7 +153,7 @@ function Mainpage() {
                         </div>
                         <ul id="productList" className="list">
                             <li>
-                                <a href="../detail/detail_saint.html">
+                                <a href="/detail">
                                     <div className="img">
                                         <img
                                             src={require('../assets/mainpage_img/cheongju1.jpg')}
@@ -167,7 +167,7 @@ function Mainpage() {
                                 </a>
                             </li>
                             <li>
-                                <a href="../detail/detail_saint.html">
+                                <a href="/detail">
                                     <div className="img">
                                         <img
                                             src={require('../assets/mainpage_img/sidemenu1.jpg')}
@@ -181,7 +181,7 @@ function Mainpage() {
                                 </a>
                             </li>
                             <li>
-                                <a href="../detail/detail_saint.html">
+                                <a href="/detail">
                                     <div className="img">
                                         <img
                                             src={require('../assets/mainpage_img/fruit1.jpg')}
@@ -195,7 +195,7 @@ function Mainpage() {
                                 </a>
                             </li>
                             <li>
-                                <a href="../detail/detail_saint.html">
+                                <a href="/detail">
                                     <div className="img">
                                         <img
                                             src={require('../assets/mainpage_img/makgeolli1.jpg')}
@@ -209,7 +209,7 @@ function Mainpage() {
                                 </a>
                             </li>
                             <li>
-                                <a href="../detail/detail_saint.html">
+                                <a href="/detail">
                                     <div className="img">
                                         <img
                                             src={require('../assets/mainpage_img/soju1.png')}
@@ -223,7 +223,7 @@ function Mainpage() {
                                 </a>
                             </li>
                             <li>
-                                <a href="../detail/detail_saint.html">
+                                <a href="/detail">
                                     <div className="img">
                                         <img
                                             src={require('../assets/mainpage_img/wine1.jpg')}
