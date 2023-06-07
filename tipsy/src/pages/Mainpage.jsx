@@ -1,7 +1,23 @@
 import React from 'react';
 import '../styles/Mainpage.scss';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function Mainpage() {
+
+
+    const [productCnt, setProductCnt] = useState(0);
+
+    useEffect(() => {
+        axios.get("/restpro/selectpro")
+            .then((data) => {
+                setProductCnt(data.data.length);
+            }).catch(() => {
+            })
+    }, [])
+
+
+
     return (
         <>
             <div className="location_wrap">
@@ -136,7 +152,7 @@ function Mainpage() {
                     <p className="pageTit">전체상품</p>
                     <div className="listStyle1" id="prod_schview">
                         <div className="listInfo1">
-                            <p className="listLeng"></p>
+                            <p className="listLeng">총 <b>{productCnt}</b>개의 상품이 있습니다.</p>
                             <ul className="listSort">
                                 <li>
                                     <a className="txt_bold" href="#">
