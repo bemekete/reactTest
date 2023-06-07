@@ -191,7 +191,9 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <a href="/" className="topfloatingbar"></a>
+                <a href="/" className="topfloatingbar">
+                    /
+                </a>
             </main>
         </>
     );

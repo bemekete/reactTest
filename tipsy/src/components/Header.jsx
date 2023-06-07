@@ -75,7 +75,7 @@ function header() {
                             </div>
                         </li>
                         <li>
-                            <a href="./map/map.html">매장찾기</a>
+                            <a href="/map">매장찾기</a>
                         </li>
                         <li>
                             <a href="./eventboard/eventboard.html">이벤트</a>
