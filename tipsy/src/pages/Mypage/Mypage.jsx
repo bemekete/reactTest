@@ -21,14 +21,14 @@ export default function Mypage() {
                                 <span>0</span> 원
                             </div>
                         </div>
-                        <div className="profile part3">
+                        {/* <div className="profile part3">
                             <a href="#">
                                 <div>쿠폰</div>
                             </a>
                             <div>
                                 <span>0</span> 개
                             </div>
-                        </div>
+                        </div> */}
                         <div className="profile part4">
                             <a href="#">
                                 <div>마이 스타일</div>
@@ -36,6 +36,7 @@ export default function Mypage() {
                         </div>
                     </div>
                 </div>
+
                 <div className="shipmentBorder">
                     <p>주문처리 현황</p>
                     <div className="shipmentBox">
