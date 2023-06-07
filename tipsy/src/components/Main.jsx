@@ -20,7 +20,7 @@ import FAQ from '../pages/FAQ';
 import CreateOrder from '../pages/CreateOrder';
 import Shopbasket from '../pages/Shopbasket';
 import Alcstyletest from '../pages/Alcstyletest';
-import Map from '../pages/Map';
+import Map from '../pages/Map/Map';
 
 function Main() {
     return (

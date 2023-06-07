@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Map.scss';
+import '../../styles/Map.scss';
 import MapComponent from './MapComponent';
 
 function Map() {
@@ -16,7 +16,7 @@ function Map() {
                             <div class="address_phone">
                                 <div>
                                     <img
-                                        src={require('../assets/map_img/map_adress.png')}
+                                        src={require('../../assets/map_img/map_adress.png')}
                                         alt="1"
                                     />
                                 </div>
@@ -28,7 +28,7 @@ function Map() {
                             <div class="address_phone">
                                 <div>
                                     <img
-                                        src={require('../assets/map_img//map_phone.png')}
+                                        src={require('../../assets/map_img//map_phone.png')}
                                         alt="2"
                                     />
                                 </div>
@@ -40,7 +40,7 @@ function Map() {
                             <div class="address_phone">
                                 <div>
                                     <img
-                                        src={require('../assets/map_img/map_fax2.png')}
+                                        src={require('../../assets/map_img/map_fax2.png')}
                                         alt="3"
                                     />
                                 </div>
