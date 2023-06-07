@@ -1,13 +1,13 @@
 import React from 'react';
 import '../../styles/HomePage/Home.scss';
-import SlideContainer from '../../pages/HomePage/ImageSlider';
+import ImageSlider from '../../pages/HomePage/ImageSlider';
 
 function Home() {
     return (
         <>
             <main id="home_main">
-                {/* 슬라이드 기능 */}
-                <SlideContainer />
+                {/* 이미지 슬라이드 컴포넌트 */}
+                <ImageSlider />
 
                 <div className="wrap_triple">
                     <div className="triple_tit">BEST PRODUCT</div>
@@ -85,10 +85,7 @@ function Home() {
                     <div className="event_tit">EVENT</div>
                     <div className="event_main event_img1">
                         <div>
-                            <a
-                                href="./detail/detail_saint.html"
-                                className="winePageButton"
-                            >
+                            <a href="/detail" className="winePageButton">
                                 자세히 알아보기
                             </a>
                         </div>
@@ -97,20 +94,14 @@ function Home() {
                     <div className="event_main event_img2">
                         <div></div>
                         <div>
-                            <a
-                                href="./detail/detail_monkey.html"
-                                className="winePageButton"
-                            >
+                            <a href="/detail" className="winePageButton">
                                 자세히 알아보기
                             </a>
                         </div>
                     </div>
                     <div className="event_main event_img3">
                         <div>
-                            <a
-                                href="./detail/detail_hansiwool.html"
-                                className="winePageButton"
-                            >
+                            <a href="/detail" className="winePageButton">
                                 자세히 알아보기
                             </a>
                         </div>
