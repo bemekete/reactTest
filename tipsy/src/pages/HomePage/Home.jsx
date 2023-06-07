@@ -1,43 +1,14 @@
 import React from 'react';
-import '../styles/Home.scss';
+import '../../styles/HomePage/Home.scss';
+import SlideContainer from '../../pages/HomePage/ImageSlider';
 
 function Home() {
     return (
         <>
             <main id="home_main">
-                <div className="main_container">
-                    <ul className="slide_list">
-                        <li>
-                            <img
-                                src={require('../assets/home_img/slide4.png')}
-                                alt="bg4"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src={require('../assets/home_img/slide1.png')}
-                                alt="bg1"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src={require('../assets/home_img/slide2.png')}
-                                alt="bg2"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src={require('../assets/home_img/slide3.png')}
-                                alt="bg3"
-                            />
-                        </li>
-                    </ul>
+                {/* 슬라이드 기능 */}
+                <SlideContainer />
 
-                    <div className="pageOfPages">
-                        <a href="./eventboard/eventboard.html">/</a>
-                    </div>
-                    <div className="pager"></div>
-                </div>
                 <div className="wrap_triple">
                     <div className="triple_tit">BEST PRODUCT</div>
                     <div className="triple_main">
