@@ -6,7 +6,7 @@
     border-bottom: 1px solid #efefef;
 }
 
-/* ############################### container전체 ############################ */
+/* ############################### mainpage_container 전체 ############################ */
 #mainpage_container {
     display: flex;
     padding: 0 40px 100px 40px;
@@ -22,116 +22,116 @@
         text-align: center;
     }
 
-    /* ################################### 왼쪽 네비게이션바 ################################### */
-
-    #mainpage_search {
-        width: 240px;
-        /* border: 1px solid; */
-    }
-
-    .search_tit {
-        margin-left: 0;
-        font-size: 1.8em;
-    }
-
     .pageTit {
         margin: 90px 0 30px 0;
         font-size: 2.2em;
         font-weight: bold;
     }
 
-    .search_list.cate_list {
-        padding: 30px 10px;
-        border-bottom: 2px solid #efefef;
-    }
+    /* ################################### 왼쪽 네비게이션바 ################################### */
 
-    .search_list.cate_list .cate_list_item {
-        padding: 10px 0;
-        font-size: 1.15em;
-    }
+    #mainpage_search {
+        width: 240px;
+        /* border: 1px solid; */
 
-    .cate_list_item a {
-        font-weight: bold;
-    }
+        .search_tit {
+            margin-left: 0;
+            font-size: 1.8em;
+        }
 
-    .searchSorter dl dt {
-        font-size: 1.1em;
-        margin-bottom: 20px;
-    }
+        .search_list.cate_list {
+            padding: 30px 10px;
+            border-bottom: 2px solid #efefef;
+        }
 
-    .searchSorter dl dd ul li {
-        display: inline-block;
-        margin-bottom: 4px;
-        font-size: 0.9em;
-        background-color: #f9f9f9;
-    }
+        .search_list.cate_list .cate_list_item {
+            padding: 10px 0;
+            font-size: 1.15em;
+        }
 
-    .searchSorter .sortFilter {
-        text-align: center;
-        border: 1px solid #ededed;
-    }
+        .cate_list_item a {
+            font-weight: bold;
+        }
 
-    .searchSorter .sortFilter a {
-        display: block;
-        padding: 10px 0;
-    }
+        .searchSorter dl dt {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
 
-    .sortListCon dl {
-        margin: 20px 0 20px 0;
-        border-bottom: 2px solid #efefef;
-    }
+        .searchSorter dl dd ul li {
+            display: inline-block;
+            margin-bottom: 4px;
+            font-size: 0.9em;
+            background-color: #f9f9f9;
+        }
 
-    .sortListCon dl dt {
-        display: flex;
-        font-weight: bold;
-        justify-content: space-between;
-    }
+        .searchSorter .sortFilter {
+            text-align: center;
+            border: 1px solid #ededed;
+        }
 
-    .sortListCon dl dt img {
-        height: 22px;
-        padding-bottom: 5px;
-        cursor: pointer;
-        vertical-align: middle;
-        transition: 0.3s;
-    }
+        .searchSorter .sortFilter a {
+            display: block;
+            padding: 10px 0;
+        }
 
-    .rotate {
-        transform: rotateX(180deg);
-    }
+        .sortListCon dl {
+            margin: 20px 0 20px 0;
+            border-bottom: 2px solid #efefef;
+        }
 
-    .sortListCon dl:first-child li {
-        width: 130px;
-    }
+        .sortListCon dl dt {
+            display: flex;
+            font-weight: bold;
+            justify-content: space-between;
+        }
 
-    .sortList ul {
-        margin-bottom: 20px;
-    }
+        .sortListCon dl dt img {
+            height: 22px;
+            padding-bottom: 5px;
+            cursor: pointer;
+            vertical-align: middle;
+            transition: 0.3s;
+        }
 
-    .sortList li {
-        box-sizing: border-box;
-        text-align: center;
-        width: 75px;
-        height: 30px;
-        line-height: 30px;
-        margin-left: 5px;
-    }
+        .rotate {
+            transform: rotateX(180deg);
+        }
 
-    .sortList a {
-        display: inline-block;
-        width: 100%;
-    }
+        .sortListCon dl:first-child li {
+            width: 130px;
+        }
 
-    .btnClick {
-        background-color: #333;
-        color: white;
-    }
+        .sortList ul {
+            margin-bottom: 20px;
+        }
 
-    .sortList:last-child {
-        margin-bottom: 15px;
-    }
+        .sortList li {
+            box-sizing: border-box;
+            text-align: center;
+            width: 75px;
+            height: 30px;
+            line-height: 30px;
+            margin-left: 5px;
+        }
 
-    .sortFilter {
-        margin-top: 40px;
+        .sortList a {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .btnClick {
+            background-color: #333;
+            color: white;
+        }
+
+        .sortList:last-child {
+            margin-bottom: 15px;
+        }
+
+        .sortFilter {
+            margin-top: 40px;
+        }
     }
 
     /* ################################### 메인콘텐트 ################################### */
@@ -141,12 +141,25 @@
         margin-left: 100px;
     }
 
+    // 상품리스트
     #productList {
         margin-top: 60px;
         display: flex;
         flex-wrap: wrap;
 
         justify-content: space-between;
+
+        .tit > p,
+        .price {
+            /* float: left; */
+            padding: 10px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .tit p {
+            font-size: 17px;
+        }
     }
 
     #productList li:nth-of-type(n + 4) {
@@ -175,18 +188,6 @@
     div[class='img'] > img {
         width: 100%;
         border-radius: 10px;
-    }
-
-    .tit > p,
-    .price {
-        /* float: left; */
-        padding: 10px;
-        margin-left: 10px;
-        font-weight: bold;
-    }
-
-    .tit p {
-        font-size: 17px;
     }
 
     .listSort {
