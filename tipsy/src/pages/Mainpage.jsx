@@ -72,8 +72,8 @@ function Content() {
     //////////////////////// 상단에 상품 개수 나타내기 ////////////////////////
     useEffect(() => {
         const listLeng = document.querySelector('.listLeng');
-        listLeng.innerHTML = `<p>총 <b>${visibleProductCount}</b>개의 상품이 있습니다.</p>`;
-    }, [visibleProductCount]);
+        listLeng.innerHTML = `<p>총 <b>${products.length}</b>개의 상품이 있습니다.</p>`;
+    }, []);
 
     //////////////////////// 더보기버튼 이벤트 ////////////////////////
     const handleBtnMoreClick = (e) => {
