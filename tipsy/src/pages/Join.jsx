@@ -20,7 +20,7 @@ function Join() {
                                     name="register_agree"
                                     id="agree_all"
                                     value="agree_all"
-                                    onClick="checkAll()"
+                                    // onClick=""
                                 />
                             </div>
                             <div className="agree use">
