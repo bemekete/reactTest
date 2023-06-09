@@ -182,7 +182,6 @@ function BtnMore({ onClick }) {
 
 function MainpageSearch() {
     const [isCollapse, setIsCollapse] = useState(true);
-    const [bgColor, setBgColor] = useState(false);
 
     ////////////////// 서치바 접는기능 ////////////////////
     const handleImageClick = (e) => {
@@ -198,7 +197,6 @@ function MainpageSearch() {
     const sortClick = (e) => {
         e.preventDefault();
         const target = e.target.closest('a');
-        setBgColor(bgColor);
         target.classList.toggle('btnClick');
     };
 
