@@ -20,6 +20,7 @@ import FAQ from '../pages/FAQ';
 import CreateOrder from '../pages/CreateOrder';
 import Shopbasket from '../pages/Shopbasket';
 import Alcstyletest from '../pages/Alcstyletest';
+import Adminpage from '../pages/Adminpage';
 
 function Main() {
     return (
@@ -49,6 +50,7 @@ function Main() {
                         <Route path="/createorder" element={<CreateOrder />} />
                         <Route path="/shopbasket" element={<Shopbasket />} />
                         <Route path="/alcstyletest" element={<Alcstyletest />} />
+                        <Route path="/adminpage" element={<Adminpage />} />
                     </Routes>
                 </BrowserRouter>
             </div>
