@@ -2,11 +2,13 @@ import { React, useState } from 'react';
 import '../styles/Detail.scss';
 
 function Detail() {
-    const [pieces, setPieces] = useState(0); // 구매 정보 - 상품 개수
+    const [pieces, setPieces] = useState(1); // 구매 정보 - 상품 개수
 
-    const [viewOptionView, setViewOptionView] = useState(false);
-    const [popupMessage, setPopupMessage] = useState(false);
-    const [bottomPopupMessage, setBottomPopupMessage] = useState(false);
+    const [state, setState] = useState({
+        viewOptionView: false,
+        popupMessage: false,
+        bottomPopupMessage: false,
+    })
 
     // 전체 HTML
     return (
@@ -19,6 +21,10 @@ function Detail() {
             </div>
         </div>
     );
+
+    //=================================================================
+    //=================================================================
+    //=================================================================
 
     // LeftSide HTML
     function LeftSide() {
@@ -146,19 +152,13 @@ function Detail() {
                                     <div className="review_header_name">{item.user}</div>
                                     <div className="review_header_right">
                                         <div>
-                                            <div className="review_header_tit">
-                                                {item.product}
-                                            </div>
+                                            <div className="review_header_tit">{item.product}</div>
                                             <div className="review_star"></div>
-                                            <div className="review_date">
-                                                {item.date}
-                                            </div>
+                                            <div className="review_date">{item.date}</div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="review_txt">
-                                    {item.contents}
-                                </div>
+                                <div className="review_txt">{item.contents}</div>
                             </div>
 
                             <style jsx>{`
@@ -191,6 +191,10 @@ function Detail() {
         }
     }
 
+    //=================================================================
+    //=================================================================
+    //=================================================================
+
     // SideBar HTML
     function SideBar() {
         return (
@@ -213,7 +217,7 @@ function Detail() {
                         <div className="productBuy_btn">
                             <BuyBtn where='r' />
 
-                            <div className={`popupBasket ${popupMessage ? '' : 'displayNone'}`}>
+                            <div className={`popupBasket ${state.popupMessage ? '' : 'displayNone'}`}>
                                 <CartPopupMessage where='r' />
                             </div>
                         </div>
@@ -230,7 +234,7 @@ function Detail() {
                     <BuyBtn where="b" />
                 </div>
 
-                <div className={`bottomPopupBasket ${bottomPopupMessage ? '' : 'displayNone'}`}>
+                <div className={`bottomPopupBasket ${state.bottomPopupMessage ? '' : 'displayNone'}`}>
                     <CartPopupMessage where="b" />
                 </div>
                 <OptionView />
@@ -240,10 +244,10 @@ function Detail() {
 
     function OptionView() {
         return (
-            <div className={`optionView ${viewOptionView ? '' : 'unView'}`}>
+            <div className={`optionView ${state.viewOptionView ? '' : 'unView'}`}>
                 <div>
                     <OrderForm />
-                    <span className="viewClose" onClick={() => { setViewOptionView(false) }}>
+                    <span className="viewClose" onClick={() => { setState({ ...state, viewOptionView: false }) }}>
                         <img src="../assets/detail_img/down.svg" alt="닫기" />
                     </span>
                 </div>
@@ -310,7 +314,7 @@ function Detail() {
         return (
             <>
                 <div onClick={() => {
-                    where === 'r' ? setPopupMessage(true) : setBottomPopupMessage(true)
+                    where === 'r' ? setState({ ...state, popupMessage: true }) : setState({ ...state, bottomPopupMessage: true })
                 }}>장바구니</div>
                 <button onClick={() => { onClickSubmit(where) }}>구매하기</button>
             </>
@@ -320,8 +324,8 @@ function Detail() {
     // 장바구니 팝업 메시지 함수
     function CartPopupMessage({ where }) {
         function whereis(where) {
-            if (where === "r") return setPopupMessage(false);
-            else return setBottomPopupMessage(false);
+            if (where === "r") return setState({ ...state, popupMessage: false });
+            else return setState({ ...state, bottomPopupMessage: false });
         }
 
         return (
@@ -341,7 +345,7 @@ function Detail() {
 
     // 구매 Button 클릭 시 연결 함수
     function onClickSubmit(where) {
-        if (where === 'b' && !viewOptionView) return setViewOptionView(true);
+        if (where === 'b' && !state.viewOptionView) return setState({ ...state, viewOptionView: true });
         else return formSubmit();
     }
 
@@ -379,3 +383,6 @@ const reviewItem = [
 ]
 
 export default Detail;
+
+
+// 하단 바 장바구니 버튼 연결 수정 필요
