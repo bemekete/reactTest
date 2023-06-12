@@ -64,9 +64,9 @@
         width: auto;
     }
 
-    th,
-    td {
-        // border-bottom: lightgray 1px solid;
+    .joinbox th,
+    .joinbox td {
+        border-bottom: lightgray 1px solid;
         padding: 15px 20px;
         white-space: nowrap;
     }

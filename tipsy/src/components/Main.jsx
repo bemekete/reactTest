@@ -20,6 +20,7 @@ import FAQ from '../pages/FAQ';
 import CreateOrder from '../pages/CreateOrder';
 import Shopbasket from '../pages/Shopbasket';
 import Alcstyletest from '../pages/Alcstyletest';
+import Map from '../pages/Map/Map';
 import Adminpage from '../pages/Adminpage';
 
 function Main() {
@@ -55,6 +56,11 @@ function Main() {
                         <Route path="/faq" element={<FAQ />} />
                         <Route path="/createorder" element={<CreateOrder />} />
                         <Route path="/shopbasket" element={<Shopbasket />} />
+                        <Route
+                            path="/alcstyletest"
+                            element={<Alcstyletest />}
+                        />
+                        <Route path="/map" element={<Map />} />
                         <Route path="/alcstyletest" element={<Alcstyletest />} />
                         <Route path="/adminpage" element={<Adminpage />} />
                     </Routes>
