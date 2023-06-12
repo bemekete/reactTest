@@ -1,7 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Mainpage.scss';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function Mainpage() {
+
+
+    const [productCnt, setProductCnt] = useState(0);
+
+    useEffect(() => {
+        axios.get("/restpro/selectpro")
+            .then((data) => {
+                setProductCnt(data.data.length);
+            }).catch(() => {
+            })
+    }, [])
+
+
+
     return (
         <>
             <div className="location_wrap">
